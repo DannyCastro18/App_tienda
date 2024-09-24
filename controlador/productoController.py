@@ -175,6 +175,8 @@ def eliminar(id):
 @app.route("/api/listarProductos",methods=["GET"])
 def apiListarProductos():
     listaProductos=productos.find()
+
+    
     lista=[]
     for p in listaProductos:       
         producto={
